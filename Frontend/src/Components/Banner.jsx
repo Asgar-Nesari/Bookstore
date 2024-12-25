@@ -12,10 +12,11 @@ function Banner() {
               <span className="text-pink-600">new everyday !!!</span>
             </h1>
             <p className="text-xl text-slate-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-              corrupti perspiciatis ipsa earum quam aliquid quasi hic sit neque
-              ipsum, nisi sed, dicta repellat, reiciendis sunt incidunt nobis
-              assumenda numquam.
+              Welcome to Bookstore, where stories come alive and imaginations
+              thrive! Founded with a passion for books and a love for learning,
+              our bookstore is a haven for readers of all ages. Whether you are
+              looking for the latest bestsellers, timeless classics, or hidden
+              gems, we have something special for everyone.
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
@@ -36,8 +37,6 @@ function Banner() {
           <img src={banner} alt="" className="w-92 h-92" />
         </div>
       </div>
-
-     
     </>
   );
 }

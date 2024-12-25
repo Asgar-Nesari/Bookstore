@@ -63,10 +63,7 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis, ullam obcaecati mollitia consequuntur, reiciendis
-            cumque maxime vero adipisci aut hic quisquam nobis veniam natus
-            nostrum. A maxime harum aperiam nesciunt.
+          Unlock your potential with our free courses! At our Bookstore, we believe that learning should be accessible to everyone. That’s why we’re proud to offer a selection of courses that empower you to grow, explore, and thrive—at no cost to you.
           </p>
         </div>
       

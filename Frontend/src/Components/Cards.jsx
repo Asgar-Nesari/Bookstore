@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Cards({item}) {
   return (
     <>
@@ -19,7 +20,9 @@ function Cards({item}) {
             <p>I{item.title}</p>
             <div className="card-actions justify-between">
               <div className="badge badge-outline">${item.price}</div>
-              <div className="badge badge-outline hover:bg-pink-500 duration-200 hover:text-white px-2 py-2 cursor-pointer">Buy Now</div>
+              
+              <button className="badge badge-outline hover:bg-pink-500 duration-200 hover:text-white px-3 py-4 cursor-pointer">Buy Now</button>
+             
             </div>
           </div>
         </div>
