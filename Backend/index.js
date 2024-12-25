@@ -8,7 +8,7 @@ import userRoute from './route/user.route.js';
 const app = express()
 
 const PORT=process.env.PORT || 4000;
-// const URI=process.env.MongoDBURI;
+
 
 dotenv.config()
 //middleware

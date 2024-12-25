@@ -10,7 +10,7 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = async(data) => {
+  const onSubmit = async (data) => {
     const userInfo = {
       email: data.email,
       password: data.password,
@@ -20,20 +20,19 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success('Login Successfully');
+          toast.success("Login Successfully");
           document.getElementById("my_modal_3").close();
-          setTimeout(()=>{
-            
+          setTimeout(() => {
             window.location.reload();
-            localStorage.setItem("users",JSON.stringify(res.data.user));
-          },1000)
+            localStorage.setItem("users", JSON.stringify(res.data.user));
+          }, 1000);
         }
         
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          toast.error("Error: "+ err.response.data.message);
+          toast.error("Error: " + err.response.data.message);
           setTimeout(() => {}, 2000);
         }
       });
@@ -65,9 +64,13 @@ function Login() {
                 {...register("email", { required: true })}
               />
               <br />
-               {errors.email && <span className="text-sm text-red-400 mx-2">This field is required</span>}
+              {errors.email && (
+                <span className="text-sm text-red-400 mx-2">
+                  This field is required
+                </span>
+              )}
             </div>
-            
+
             {/* password */}
             <div className="mt-4 space-y-2">
               <span>Password</span>
@@ -79,7 +82,11 @@ function Login() {
                 {...register("password", { required: true })}
               />
               <br />
-              {errors.password && <span className="text-sm text-red-400 mx-2">This field is required</span>}
+              {errors.password && (
+                <span className="text-sm text-red-400 mx-2">
+                  This field is required
+                </span>
+              )}
             </div>
             {/* button */}
             <div className="flex justify-around mt-4 items-center">
